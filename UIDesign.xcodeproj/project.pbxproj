@@ -35,6 +35,8 @@
 		D99CED7C283D316D005DA538 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99CED7A283D316D005DA538 /* MenuCell.swift */; };
 		D99CED7D283D316D005DA538 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99CED7B283D316D005DA538 /* MenuCell.xib */; };
 		D9FC6A74283D4CD9000D3061 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC6A73283D4CD9000D3061 /* MenuItem.swift */; };
+		D9FC6A78283D518A000D3061 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC6A76283D518A000D3061 /* RoomCell.swift */; };
+		D9FC6A79283D518A000D3061 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FC6A77283D518A000D3061 /* RoomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		D99CED7A283D316D005DA538 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		D99CED7B283D316D005DA538 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		D9FC6A73283D4CD9000D3061 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		D9FC6A76283D518A000D3061 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		D9FC6A77283D518A000D3061 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		D9112F31283CE23600B61A4D /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D9FC6A75283D5176000D3061 /* Room Cell */,
 				D99CED79283D3144005DA538 /* Menu Cell */,
 				D99CED74283D2CEC005DA538 /* Options Cell */,
 				D9112F37283CE7BE00B61A4D /* Slider Cell */,
@@ -197,6 +202,15 @@
 			path = "Menu Cell";
 			sourceTree = "<group>";
 		};
+		D9FC6A75283D5176000D3061 /* Room Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC6A76283D518A000D3061 /* RoomCell.swift */,
+				D9FC6A77283D518A000D3061 /* RoomCell.xib */,
+			);
+			path = "Room Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FC6A79283D518A000D3061 /* RoomCell.xib in Resources */,
 				D99CED78283D2D10005DA538 /* OptionsCell.xib in Resources */,
 				D99CED67283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf in Resources */,
 				D99CED65283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf in Resources */,
@@ -289,6 +304,7 @@
 				D9112F22283CDB4800B61A4D /* ViewController.swift in Sources */,
 				D9112F3A283CE7D700B61A4D /* SliderCell.swift in Sources */,
 				D9112F1E283CDB4800B61A4D /* AppDelegate.swift in Sources */,
+				D9FC6A78283D518A000D3061 /* RoomCell.swift in Sources */,
 				D9112F34283CE25500B61A4D /* AddressCell.swift in Sources */,
 				D9112F20283CDB4800B61A4D /* SceneDelegate.swift in Sources */,
 				D99CED72283D071C005DA538 /* SlideCell.swift in Sources */,

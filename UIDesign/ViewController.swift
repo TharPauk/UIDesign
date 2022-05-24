@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private var images = ["image1", "image2", "image3"]
     
     private enum CellTypes: String, CaseIterable {
-        case AddressCell, SliderCell, OptionsCell, MenuCell
+        case AddressCell, SliderCell, OptionsCell, MenuCell, RoomCell
     }
     
     override func viewDidLoad() {
@@ -39,12 +39,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        section == 4 ? 5: 1
     }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        4
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,6 +53,7 @@ extension ViewController: UITableViewDataSource {
         case 1: return createSliderCell(indexPath)
         case 2: return createOptionsCell(indexPath)
         case 3: return createMenuCell(indexPath)
+        case 4: return createRoomCell(indexPath)
         default: return UITableViewCell()
         }
     }
@@ -88,6 +89,15 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
+    
+    
+    private func createRoomCell(_ indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.RoomCell.rawValue, for: indexPath) as? RoomCell else {
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -98,6 +108,7 @@ extension ViewController: UITableViewDelegate {
         case 1: return 236
         case 2: return 80
         case 3: return 60
+        case 4: return 300
         default: return 0
         }
     }
