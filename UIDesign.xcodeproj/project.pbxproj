@@ -17,6 +17,19 @@
 		D9112F35283CE25500B61A4D /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9112F33283CE25500B61A4D /* AddressCell.xib */; };
 		D9112F3A283CE7D700B61A4D /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9112F38283CE7D700B61A4D /* SliderCell.swift */; };
 		D9112F3B283CE7D700B61A4D /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9112F39283CE7D700B61A4D /* SliderCell.xib */; };
+		D99CED59283D0280005DA538 /* TriangleDrawableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99CED58283D0280005DA538 /* TriangleDrawableView.swift */; };
+		D99CED65283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED5B283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf */; };
+		D99CED66283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED5C283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf */; };
+		D99CED67283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED5D283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf */; };
+		D99CED68283D0453005DA538 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D99CED5E283D0453005DA538 /* OFL.txt */; };
+		D99CED69283D0453005DA538 /* EncodeSansSemiCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED5F283D0453005DA538 /* EncodeSansSemiCondensed-Black.ttf */; };
+		D99CED6A283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED60283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf */; };
+		D99CED6B283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED61283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf */; };
+		D99CED6C283D0453005DA538 /* EncodeSansSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED62283D0453005DA538 /* EncodeSansSemiCondensed-Bold.ttf */; };
+		D99CED6D283D0453005DA538 /* EncodeSansSemiCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED63283D0453005DA538 /* EncodeSansSemiCondensed-Thin.ttf */; };
+		D99CED6E283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99CED64283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf */; };
+		D99CED72283D071C005DA538 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99CED70283D071C005DA538 /* SlideCell.swift */; };
+		D99CED73283D071C005DA538 /* SlideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99CED71283D071C005DA538 /* SlideCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +45,19 @@
 		D9112F33283CE25500B61A4D /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
 		D9112F38283CE7D700B61A4D /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		D9112F39283CE7D700B61A4D /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		D99CED58283D0280005DA538 /* TriangleDrawableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleDrawableView.swift; sourceTree = "<group>"; };
+		D99CED5B283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Light.ttf"; sourceTree = "<group>"; };
+		D99CED5C283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D99CED5D283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		D99CED5E283D0453005DA538 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D99CED5F283D0453005DA538 /* EncodeSansSemiCondensed-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Black.ttf"; sourceTree = "<group>"; };
+		D99CED60283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		D99CED61283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D99CED62283D0453005DA538 /* EncodeSansSemiCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		D99CED63283D0453005DA538 /* EncodeSansSemiCondensed-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Thin.ttf"; sourceTree = "<group>"; };
+		D99CED64283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EncodeSansSemiCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		D99CED70283D071C005DA538 /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
+		D99CED71283D071C005DA538 /* SlideCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +90,8 @@
 		D9112F1C283CDB4800B61A4D /* UIDesign */ = {
 			isa = PBXGroup;
 			children = (
+				D99CED55283CFF6F005DA538 /* Supporting Files */,
+				D99CED6F283D06F6005DA538 /* Collection Cells */,
 				D9112F31283CE23600B61A4D /* Table Cells */,
 				D9112F1D283CDB4800B61A4D /* AppDelegate.swift */,
 				D9112F1F283CDB4800B61A4D /* SceneDelegate.swift */,
@@ -101,6 +129,41 @@
 				D9112F39283CE7D700B61A4D /* SliderCell.xib */,
 			);
 			path = "Slider Cell";
+			sourceTree = "<group>";
+		};
+		D99CED55283CFF6F005DA538 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D99CED5A283D0443005DA538 /* Fonts */,
+				D99CED58283D0280005DA538 /* TriangleDrawableView.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D99CED5A283D0443005DA538 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D99CED5F283D0453005DA538 /* EncodeSansSemiCondensed-Black.ttf */,
+				D99CED62283D0453005DA538 /* EncodeSansSemiCondensed-Bold.ttf */,
+				D99CED61283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf */,
+				D99CED5C283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf */,
+				D99CED5B283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf */,
+				D99CED64283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf */,
+				D99CED60283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf */,
+				D99CED5D283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf */,
+				D99CED63283D0453005DA538 /* EncodeSansSemiCondensed-Thin.ttf */,
+				D99CED5E283D0453005DA538 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D99CED6F283D06F6005DA538 /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D99CED70283D071C005DA538 /* SlideCell.swift */,
+				D99CED71283D071C005DA538 /* SlideCell.xib */,
+			);
+			path = "Collection Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +224,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99CED67283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf in Resources */,
+				D99CED65283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf in Resources */,
+				D99CED66283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf in Resources */,
+				D99CED6B283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf in Resources */,
+				D99CED6E283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf in Resources */,
+				D99CED6A283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf in Resources */,
+				D99CED68283D0453005DA538 /* OFL.txt in Resources */,
+				D99CED6D283D0453005DA538 /* EncodeSansSemiCondensed-Thin.ttf in Resources */,
 				D9112F2A283CDB4A00B61A4D /* LaunchScreen.storyboard in Resources */,
+				D99CED69283D0453005DA538 /* EncodeSansSemiCondensed-Black.ttf in Resources */,
 				D9112F27283CDB4A00B61A4D /* Assets.xcassets in Resources */,
 				D9112F3B283CE7D700B61A4D /* SliderCell.xib in Resources */,
 				D9112F35283CE25500B61A4D /* AddressCell.xib in Resources */,
 				D9112F25283CDB4800B61A4D /* Main.storyboard in Resources */,
+				D99CED6C283D0453005DA538 /* EncodeSansSemiCondensed-Bold.ttf in Resources */,
+				D99CED73283D071C005DA538 /* SlideCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,11 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99CED59283D0280005DA538 /* TriangleDrawableView.swift in Sources */,
 				D9112F22283CDB4800B61A4D /* ViewController.swift in Sources */,
 				D9112F3A283CE7D700B61A4D /* SliderCell.swift in Sources */,
 				D9112F1E283CDB4800B61A4D /* AppDelegate.swift in Sources */,
 				D9112F34283CE25500B61A4D /* AddressCell.swift in Sources */,
 				D9112F20283CDB4800B61A4D /* SceneDelegate.swift in Sources */,
+				D99CED72283D071C005DA538 /* SlideCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

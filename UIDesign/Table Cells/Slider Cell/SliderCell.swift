@@ -7,14 +7,54 @@
 
 import UIKit
 
-class SliderCell: UITableViewCell {
-
+@IBDesignable class SliderCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var paginationLabel: UILabel!
+    private var images = [String]()
+    private let slideCellId = "SlideCell"
+    
+   
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupCollectionView()
     }
+    
+    private func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let nib = UINib(nibName: slideCellId, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: slideCellId)
+    }
+    
+    func setData(images: [String]) {
+        self.images = images
+        collectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: slideCellId, for: indexPath) as? SlideCell
+        else { return UICollectionViewCell() }
+        cell.setData(imageName: images[indexPath.item])
+        return cell
+    }
+    
+    
+    
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+}
+
+extension SliderCell: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = UIScreen.main.bounds.width
+        let cellWidth = screenWidth - 40
+        return CGSize(width: cellWidth, height: 200)
     }
     
 }

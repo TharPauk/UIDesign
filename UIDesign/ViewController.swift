@@ -11,8 +11,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private var images = ["image1", "image2", "image3"]
+    
     private enum CellTypes: String, CaseIterable {
-        case AddressCell
+        case AddressCell, SliderCell
     }
     
     override func viewDidLoad() {
@@ -42,12 +44,13 @@ extension ViewController: UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        1
+        2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0: return createAddressCell(indexPath)
+        case 1: return createSliderCell(indexPath)
         default: return UITableViewCell()
         }
     }
@@ -59,11 +62,25 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    
+    private func createSliderCell(_ indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.SliderCell.rawValue, for: indexPath) as? SliderCell else {
+            return UITableViewCell()
+        }
+        cell.setData(images: images)
+        return cell
+    }
 }
 
 extension ViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        108
+        switch indexPath.section {
+        case 0: return 108
+        case 1: return 236
+        default: return 0
+        }
     }
 }
 
