@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private var images = ["image1", "image2", "image3"]
     
     private enum CellTypes: String, CaseIterable {
-        case AddressCell, SliderCell, OptionsCell
+        case AddressCell, SliderCell, OptionsCell, MenuCell
     }
     
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ extension ViewController: UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        3
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,6 +52,7 @@ extension ViewController: UITableViewDataSource {
         case 0: return createAddressCell(indexPath)
         case 1: return createSliderCell(indexPath)
         case 2: return createOptionsCell(indexPath)
+        case 3: return createMenuCell(indexPath)
         default: return UITableViewCell()
         }
     }
@@ -79,6 +80,14 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    private func createMenuCell(_ indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.MenuCell.rawValue, for: indexPath) as? MenuCell else {
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -88,12 +97,8 @@ extension ViewController: UITableViewDelegate {
         case 0: return 108
         case 1: return 236
         case 2: return 80
+        case 3: return 60
         default: return 0
         }
     }
-}
-
-
-extension ViewController {
-    
 }
