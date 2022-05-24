@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var images = ["image1", "image2", "image3"]
+    private var isByRoomSelected = true
+    private var roomsDataCount = 6
+    private var ratesDataCount = 5
     
     private enum CellTypes: String, CaseIterable {
-        case AddressCell, SliderCell, OptionsCell, MenuCell, RoomCell
+        case AddressCell, SliderCell, OptionsCell, MenuCell, RoomCell, RateCell
     }
     
     override func viewDidLoad() {
@@ -39,9 +42,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        section == 4 ? 5: 1
+        guard section == 4
+        else { return 1 }
+        return isByRoomSelected ? roomsDataCount: ratesDataCount
     }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         5
@@ -53,11 +57,31 @@ extension ViewController: UITableViewDataSource {
         case 1: return createSliderCell(indexPath)
         case 2: return createOptionsCell(indexPath)
         case 3: return createMenuCell(indexPath)
-        case 4: return createRoomCell(indexPath)
+        case 4: return isByRoomSelected ? createRoomCell(indexPath): createRateCell(indexPath)
         default: return UITableViewCell()
         }
     }
     
+}
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0: return 108
+        case 1: return 236
+        case 2: return 80
+        case 3: return 60
+        case 4: return isByRoomSelected ? 300: 244
+        default: return 0
+        }
+    }
+}
+
+
+// MARK: - Table View Cells
+
+extension ViewController {
     
     private func createAddressCell(_ indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.AddressCell.rawValue, for: indexPath) as? AddressCell else {
@@ -65,7 +89,6 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
-    
     
     private func createSliderCell(_ indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.SliderCell.rawValue, for: indexPath) as? SliderCell else {
@@ -89,8 +112,6 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    
-    
     private func createRoomCell(_ indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.RoomCell.rawValue, for: indexPath) as? RoomCell else {
             return UITableViewCell()
@@ -98,18 +119,11 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-}
-
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.section {
-        case 0: return 108
-        case 1: return 236
-        case 2: return 80
-        case 3: return 60
-        case 4: return 300
-        default: return 0
+    private func createRateCell(_ indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.RateCell.rawValue, for: indexPath) as? RateCell else {
+            return UITableViewCell()
         }
+        return cell
     }
 }
+

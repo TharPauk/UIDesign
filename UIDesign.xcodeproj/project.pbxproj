@@ -37,6 +37,8 @@
 		D9FC6A74283D4CD9000D3061 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC6A73283D4CD9000D3061 /* MenuItem.swift */; };
 		D9FC6A78283D518A000D3061 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC6A76283D518A000D3061 /* RoomCell.swift */; };
 		D9FC6A79283D518A000D3061 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FC6A77283D518A000D3061 /* RoomCell.xib */; };
+		D9FC6A7D283D577A000D3061 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FC6A7B283D577A000D3061 /* RateCell.swift */; };
+		D9FC6A7E283D577A000D3061 /* RateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FC6A7C283D577A000D3061 /* RateCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		D9FC6A73283D4CD9000D3061 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		D9FC6A76283D518A000D3061 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		D9FC6A77283D518A000D3061 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		D9FC6A7B283D577A000D3061 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		D9FC6A7C283D577A000D3061 /* RateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		D9112F31283CE23600B61A4D /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D9FC6A7A283D5769000D3061 /* Rate Cell */,
 				D9FC6A75283D5176000D3061 /* Room Cell */,
 				D99CED79283D3144005DA538 /* Menu Cell */,
 				D99CED74283D2CEC005DA538 /* Options Cell */,
@@ -211,6 +216,15 @@
 			path = "Room Cell";
 			sourceTree = "<group>";
 		};
+		D9FC6A7A283D5769000D3061 /* Rate Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC6A7B283D577A000D3061 /* RateCell.swift */,
+				D9FC6A7C283D577A000D3061 /* RateCell.xib */,
+			);
+			path = "Rate Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +288,7 @@
 				D99CED67283D0453005DA538 /* EncodeSansSemiCondensed-SemiBold.ttf in Resources */,
 				D99CED65283D0453005DA538 /* EncodeSansSemiCondensed-Light.ttf in Resources */,
 				D99CED66283D0453005DA538 /* EncodeSansSemiCondensed-ExtraLight.ttf in Resources */,
+				D9FC6A7E283D577A000D3061 /* RateCell.xib in Resources */,
 				D99CED6B283D0453005DA538 /* EncodeSansSemiCondensed-ExtraBold.ttf in Resources */,
 				D99CED6E283D0453005DA538 /* EncodeSansSemiCondensed-Medium.ttf in Resources */,
 				D99CED6A283D0453005DA538 /* EncodeSansSemiCondensed-Regular.ttf in Resources */,
@@ -303,6 +318,7 @@
 				D99CED7C283D316D005DA538 /* MenuCell.swift in Sources */,
 				D9112F22283CDB4800B61A4D /* ViewController.swift in Sources */,
 				D9112F3A283CE7D700B61A4D /* SliderCell.swift in Sources */,
+				D9FC6A7D283D577A000D3061 /* RateCell.swift in Sources */,
 				D9112F1E283CDB4800B61A4D /* AppDelegate.swift in Sources */,
 				D9FC6A78283D518A000D3061 /* RoomCell.swift in Sources */,
 				D9112F34283CE25500B61A4D /* AddressCell.swift in Sources */,
