@@ -24,7 +24,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tC3-Vj-Bst" customClass="MenuItem" customModule="UIDesign" customModuleProvider="target">
-                        <rect key="frame" x="142" y="12" width="138" height="40"/>
+                        <rect key="frame" x="152" y="12" width="124" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -47,7 +47,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Rates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKH-hD-Gad">
-                        <rect key="frame" x="142" y="12" width="138" height="40"/>
+                        <rect key="frame" x="152" y="12" width="124" height="40"/>
                         <fontDescription key="fontDescription" name="EncodeSansSemiCondensed-Medium" family="Encode Sans Semi Condensed" pointSize="16"/>
                         <color key="textColor" red="0.23137254900000001" green="0.36470588240000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -86,13 +86,13 @@
                     <constraint firstItem="mGA-JV-rKp" firstAttribute="leading" secondItem="ugg-cJ-4NG" secondAttribute="leading" id="3bq-fA-qM7"/>
                     <constraint firstItem="mGA-JV-rKp" firstAttribute="top" secondItem="ugg-cJ-4NG" secondAttribute="top" id="52U-6m-uyu"/>
                     <constraint firstItem="nKH-hD-Gad" firstAttribute="bottom" secondItem="tC3-Vj-Bst" secondAttribute="bottom" id="6eb-AC-3wG"/>
-                    <constraint firstItem="tC3-Vj-Bst" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-18" id="9Gu-kh-TbB"/>
+                    <constraint firstItem="tC3-Vj-Bst" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-8" id="9Gu-kh-TbB"/>
                     <constraint firstItem="nKH-hD-Gad" firstAttribute="trailing" secondItem="tC3-Vj-Bst" secondAttribute="trailing" id="FGX-Jc-AVK"/>
                     <constraint firstAttribute="centerX" secondItem="ugg-cJ-4NG" secondAttribute="trailing" id="Vzk-qR-snW"/>
                     <constraint firstItem="mGA-JV-rKp" firstAttribute="trailing" secondItem="ugg-cJ-4NG" secondAttribute="trailing" id="Xzu-Rd-eqc"/>
                     <constraint firstItem="mGA-JV-rKp" firstAttribute="bottom" secondItem="ugg-cJ-4NG" secondAttribute="bottom" id="dKE-zb-vb2"/>
                     <constraint firstItem="tC3-Vj-Bst" firstAttribute="centerY" secondItem="ugg-cJ-4NG" secondAttribute="centerY" id="jlN-28-C1a"/>
-                    <constraint firstAttribute="trailing" secondItem="tC3-Vj-Bst" secondAttribute="trailing" constant="40" id="kHe-LQ-MGE"/>
+                    <constraint firstAttribute="trailing" secondItem="tC3-Vj-Bst" secondAttribute="trailing" constant="44" id="kHe-LQ-MGE"/>
                     <constraint firstItem="ugg-cJ-4NG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="mUn-Mc-FdL"/>
                     <constraint firstItem="nKH-hD-Gad" firstAttribute="top" secondItem="tC3-Vj-Bst" secondAttribute="top" id="rZh-oa-UjK"/>
                     <constraint firstItem="ugg-cJ-4NG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zAv-sW-k5J"/>
