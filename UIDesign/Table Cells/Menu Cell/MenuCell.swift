@@ -7,15 +7,19 @@
 
 import UIKit
 
+protocol MenuChanging: class {
+    func menuDidChange(index: Int)
+}
+
 class MenuCell: UITableViewCell {
     
-    private var selectedMenuInt = 0
     @IBOutlet weak var byRatesView: MenuItem!
     @IBOutlet weak var byRatesLabel: UILabel!
-    
-    
     @IBOutlet weak var byRoomView: MenuItem!
     @IBOutlet weak var byRoomLabel: UILabel!
+    
+    private var selectedMenuInt = 0
+    weak var delegate: MenuChanging?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,6 +38,7 @@ class MenuCell: UITableViewCell {
         let unselectedColor = UIColor.white
         byRoomView.backgroundColor = tag == 0 ? selectedColor: unselectedColor
         byRatesView.backgroundColor = tag == 1 ? selectedColor: unselectedColor
+        delegate?.menuDidChange(index: tag)
     }
     
 }

@@ -72,12 +72,24 @@ extension ViewController: UITableViewDelegate {
         case 1: return 236
         case 2: return 80
         case 3: return 60
-        case 4: return isByRoomSelected ? 300: 244
+        case 4: return isByRoomSelected ? 300: 270
         default: return 0
         }
     }
 }
 
+
+// MARK: - Menu Delegate
+
+extension ViewController: MenuChanging {
+    
+    func menuDidChange(index: Int) {
+        isByRoomSelected = index == 0
+        tableView.reloadSections(IndexSet(integer: 4), with: .automatic)
+    }
+    
+    
+}
 
 // MARK: - Table View Cells
 
@@ -109,6 +121,7 @@ extension ViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CellTypes.MenuCell.rawValue, for: indexPath) as? MenuCell else {
             return UITableViewCell()
         }
+        cell.delegate = self
         return cell
     }
     
