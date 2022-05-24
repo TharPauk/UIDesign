@@ -13,6 +13,7 @@ import UIKit
     @IBOutlet weak var paginationLabel: UILabel!
     private var images = [String]()
     private let slideCellId = "SlideCell"
+    private let screenWidth = UIScreen.main.bounds.width
     
    
     override func awakeFromNib() {
@@ -52,8 +53,7 @@ import UIKit
 extension SliderCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenWidth = UIScreen.main.bounds.width
-        let cellWidth = screenWidth - 40
+        let cellWidth = screenWidth - 56
         return CGSize(width: cellWidth, height: 200)
     }
     
